@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Dasboard</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/icon-title.png" rel="icon">
+  
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Exo:400,700" rel="stylesheet">
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h1 class="logo"><a href="index.html">Kishore Uputoori</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="./index.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="./resume.html">Resume</a></li>
+          <li><a class="nav-link scrollto" href="./stack.html">Stack</a></li>
+          <li><a class="nav-link scrollto" href="./services.html">Services</a></li>
+          <li><a class="nav-link scrollto " href="./portfolio.html">Portfolio</a></li>
+          <li><a class="nav-link scrollto " href="./contact.html">Contact</a></li>
+          
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header>
+
+ 
+  <div class="area d-flex dp-home">
+  
+      <div class="picture-bg child">
+        <img src="assets/img/kishore.jpg" style="height: 150px; width: 149px;filter: grayscale(100%);"
+          onmouseover="this.style.filter='grayscale(0%)';" onmouseout="this.style.filter='grayscale(100%)';"
+          alt="Kishore">
+      </div>
+     
+
+
+
+
+
+
+
+    <div id="typing-container">
+      <div class="context">
+        <div class="container">
+          <div class="typing-animation" id="typing-animation"></div>
+        </div>
+      </div>
+    </div>
+    
+    
+
+    <div class="flex-container">
+      <!-- My Articles Section -->
+      <div class="new-section">
+          <u><h2>My Articles</h2></u>
+          <p>Dive into my collection of articles where I share insights, tips, and tutorials on various topics including RESTful API design, performance optimization, and database management. Explore <a href="https://kishoreuputoori.hashnode.dev/?source=top_nav_blog_home" target="_blank"><u>here</u></a>.</p>
+      </div>
+
+      <!-- GitHub Repository Section -->
+      <div class="new-section">
+          <h2><u>GitHub Repository</u></h2>
+          <p>Explore my GitHub repository to discover my projects, contributions, and collaborations in Java, JavaScript, Spring Boot, Angular, and more. Visit <a href="https://github.com/kishorekrish99" target="_blank"><u>here</u></a>.</p>
+      </div>
+  </div>
+      
+    </div>
+    
+  </div>
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+  
+
+
+
+    
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  
+<script>
+    const text = "  The individual, holding a Master's degree and Oracle Certified Associate Java developer status, demonstrates expertise in RESTful API design, performance optimization, and database management. Proficient in Java, JavaScript, Spring Boot, Angular, and Microservices, they actively engage in hackathons and online courses to enhance their skills. Committed to continuous learning, they remain adaptable and motivated in their professional development journey.";
+    const typingAnimation = document.getElementById('typing-animation');
+    let charIndex = 0;
+
+    function type() {
+      if (charIndex < text.length) {
+        typingAnimation.innerHTML += text.charAt(charIndex);
+        charIndex++;
+        setTimeout(type, 20); 
+      }
+    }
+
+    type();
+  </script>
+
+</body>
+
+</html>
