@@ -176,6 +176,8 @@ a:hover {
   margin: 0 auto;
 }
 
+
+
 /*--/ Title Left /--*/
 .title-box-2 {
   margin-bottom: 3rem;
@@ -410,7 +412,20 @@ a:hover {
 }
 
 /*------/ Button /------*/
-
+.button {
+  display: inline-block;
+  padding: 0.3rem 0.6rem;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  font-size: 1rem;
+  border-radius: 0.3rem;
+ /* border: 1px solid transparent; */
+  transition: all 500ms ease;
+  cursor: pointer;
+}
 
 .button:focus {
   outline: 0;
@@ -2287,25 +2302,6 @@ body{
     margin-top: 0;
   }
 }
-
-
-
-
-
-
-.btn-flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%; /* Full width inside its container */
-  max-width: 200px; /* Prevents it from being too large */
-}
-
-
-
-
-
-
 
 
  /* Laptop */
